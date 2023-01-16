@@ -93,7 +93,7 @@ def _dtwMP(
                         dist = _dtw(a, b, dtw_mask)
                         if dist < ρ[thread_idx, uint64_ia]:
                             ρ[thread_idx, uint64_ia] = dist
-                            I[thread_idx, uint64_ia] = uint64_ib 
+                            I[thread_idx, uint64_ia] = uint64_ib
 
                 else:
                     uint64_ib = np.uint64(i_b)
